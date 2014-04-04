@@ -1,0 +1,134 @@
+   .header{
+      position: absolute;
+      top:0px;
+      width: 100%;
+      z-index: 1;
+      height: 400px;
+    }
+    .content{
+      top: 70px;
+      bottom: 70px;
+      position: absolute;
+      width: 100%;      
+    }
+    .footer{
+      position: absolute;
+      height: 70px;
+      bottom: 0px;
+      width: 100%;
+
+    }
+    td{
+      padding:10px;
+    }
+
+    #searchInput{
+    	height: 50px;
+    	font-size: 25px;
+    	border-radius: 0px;
+    }
+
+    .hideInput{
+    	border:0px;
+    	background:#EBEBEB;
+    }
+
+    .bottomBtnClick{
+    	background:#E1AE2E;
+    	color:white;
+    	border:0px;
+    	width:50%;
+    	height:70px;
+    	border-radius: 0px;
+    	font-size:25px;
+    }
+
+    .bottomBtnUnclick{
+    	background:#C3C3C3;
+    	color:#999999;
+    	border:0px;
+    	width:50%;
+    	height:70px;
+    	border-radius: 0px;
+    	font-size:25px;
+    }
+
+    #myself{
+    	width:100%;
+    	height:70px;
+    	border-radius: 0px;
+    	background:#E1AE2E;
+    	border: 0px;
+    }
+
+    #iconId{
+    	position:absolute;
+    	top:20px;
+    	left:10px;
+    	width:40px;
+    }
+
+    #locationIcon{
+    	position:absolute;
+    	left:75px;
+    	top:20px;
+    	height:25px;
+    	font-size:20px;
+    	color:green
+    }
+
+    #locationText{
+    	position:absolute;
+    	left:100px;
+    	top:20px;
+    	font-size:20px;
+    }
+
+    .text-right{
+    	position:absolute;
+    	top:20px;
+    	right:10px;
+    	width:200px;
+    }
+
+    #menuTool{
+    	padding:10px 20px 10px 20px;
+    	background:#EBEBEB;
+    	
+    }
+
+    #distanceSelect{
+    	width: 100%;
+    	height:50px;
+    	font-size:25px;
+    }
+
+    #searchBtn{
+    	font-size:25px;
+    	width:100%;
+    	height:50px;
+    	background:#E1AE2E;
+    	border: 0px;
+    	color:white;
+    }
+
+    #scroller {
+		position: absolute;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		width: 100%;
+		-webkit-transform: translateZ(0);
+		-moz-transform: translateZ(0);
+		-ms-transform: translateZ(0);
+		-o-transform: translateZ(0);
+		transform: translateZ(0);
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		-webkit-text-size-adjust: none;
+		-moz-text-size-adjust: none;
+		-ms-text-size-adjust: none;
+		-o-text-size-adjust: none;
+		text-size-adjust: none;
+	}

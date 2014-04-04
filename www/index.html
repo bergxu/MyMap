@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false" ></script>
+        <!-- Latest compiled and minified CSS -->
+        <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="lib/bootstrap/css/bootstrap-glyphicons.css" rel="stylesheet">
+        <link href="css/map.css" rel="stylesheet">
+        <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+        <script src="lib/iscroll.js"></script>
+        <script src="lib/spin.js"></script>
+        <script src="js/locate.js"></script>
+
+    </head>
+    <body>
+
+ <div class="header">
+    <a id="myself" class="btn btn-default collapsed" data-toggle="collapse" data-target="#menuTool"  onclick="collapseTools();">
+      <span id="iconId" class="text-left">
+        <img src="img/arrowed_down.png" ></span>
+      <span id="locationIcon" class="glyphicon glyphicon-map-marker"></span>
+      <span id="locationText" ></span>
+      <span class="text-right" >
+        <img src="img/logo.png" ></span>
+    </a>
+
+     <div id="menuTool" class="collapse">
+       <table style="width:100%;">
+          <tr>
+            <td rowspan="2" style="width:50px;">
+              <a class="btn" onclick="exchangePostion()">
+                <img src="img/arrows.png" >
+              </a>
+            </td>
+            <td colspan="2">
+              <input id="searchInput" class="form-control hideInput" placeholder="Input Address" disabled="true">
+            </td>
+          </tr>
+          <tr>
+            <td style="width:25%;"><span style="font-size:25px;color:green" class="glyphicon glyphicon-map-marker"></span>&nbsp;<span style="font-size:25px;">My Location</span></td>
+            <td><select id="distanceSelect" class="form-control">
+              <option value="0">0 km</option>
+              <option value="5">5 km</option>
+              <option value="10">10 km</option>
+              <option value="15">15 km</option>
+              <option value="20">20 km</option>
+              <option value="25">25 km</option>
+              <option value="30">30 km</option>
+              <option value="35">35 km</option>
+              <option value="40">40 km</option>
+              <option value="45">45 km</option>
+              <option value="50">50 km</option>
+              <option value="500">500 km</option>
+              <option value="50000">50000 km</option>
+            </select></td>
+          </tr>
+          <tr><td colspan="3"><button id="searchBtn" class="btn btn-default" onclick="searchSubmit()" data-toggle="collapse" data-target="#menuTool">Go</button></td></tr>
+        </table>
+     </div>
+ </div>
+ <div id="testMap" class="content"> </div>
+ <div id="testMapList" class="content" style="display:none;background:#EBEBEB;position:absolute;top:70px;botttom:70px;overflow: hidden;"> 
+  <div id="scroller">
+     <ul id="mapList" style="list-style-type:none;padding:10px;">
+     </ul>
+ </div>
+</div>
+
+ <div class="footer">
+   <button id="mapBtn" class="bottomBtnClick" style="" onclick="showMap();">Map</button>
+   <button id="listBtn" class="bottomBtnUnclick" style="margin-left:-4px;" onclick="showMapList();">List</button>
+ </div>  
+
+    </body>
+</html>
