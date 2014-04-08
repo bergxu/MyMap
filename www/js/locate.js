@@ -23,6 +23,7 @@
     //the function runs when ths device is ready
     //
     function onDeviceReady(){
+      
         initialize();
         //get my position
         var cb = function(position){
